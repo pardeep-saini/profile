@@ -25,28 +25,28 @@ const aiArticles = [
         title: 'Python Powers Next-Gen AI',
         date: 'February 6, 2026',
         desc: "See how Python's versatility is driving innovation in artificial intelligence.",
-        image: 'assets//images/Python.jpeg',
+        image: 'images/Python.jpeg',
         enquiry: 'Python Powers Next-Gen AI'
     },
     {
         title: 'React JS Meets Intelligent Apps',
         date: 'February 5, 2026',
         desc: 'Building intuitive interfaces for sophisticated AI applications with React.',
-        image: 'assets//images/ReactJS_AIGurukulAcademy.jpeg',
+        image: 'images/ReactJS_AIGurukulAcademy.jpeg',
         enquiry: 'React JS and Intelligent Apps'
     },
     {
         title: 'Agentic AI Breakthroughs',
         date: 'February 4, 2026',
         desc: 'Autonomous AI agents are here, transforming industries with smart decision-making.',
-        image: 'assets//images/AgeticAI.jpeg',
+        image: 'images/AgeticAI.jpeg',
         enquiry: 'Agentic AI Breakthroughs'
     },
     {
         title: 'AI Ethics in Focus',
         date: 'February 3, 2026',
         desc: 'Responsible AI development is paramount for a trustworthy technological future.',
-        image: 'assets//images/AI_Rule.jpeg',
+        image: 'images/AI_Rule.jpeg',
         enquiry: 'AI Ethics and Responsible Development'
     }
 ];
@@ -56,35 +56,35 @@ const courses = [
         title: 'Python for AI & Machine Learning',
         date: '12 Weeks • Beginner to Advanced',
         desc: 'Master Python programming and build real-world AI applications with hands-on projects.',
-        image: 'assets//images/pythonAI.jpeg',
+        image: 'images/pythonAI.jpeg',
         enquiry: 'Python for AI & Machine Learning Course'
     },
     {
         title: 'React & Modern Web Development',
         date: '10 Weeks • Intermediate',
         desc: 'Create stunning, interactive web applications using React, Next.js, and modern tools.',
-        image: 'assets//images/ReactJS.jpeg',
+        image: 'images/ReactJS.jpeg',
         enquiry: 'React & Modern Web Development Course'
     },
     {
         title: 'Deep Learning Fundamentals',
         date: '14 Weeks • Advanced',
         desc: 'Dive deep into neural networks, CNNs, RNNs, and transformers with TensorFlow and PyTorch.',
-        image: 'assets//images/Deeplearnig.jpeg',
+        image: 'images/Deeplearnig.jpeg',
         enquiry: 'Deep Learning Fundamentals Course'
     },
     {
         title: 'Full Stack AI Development',
         date: '16 Weeks • Professional',
         desc: 'Build end-to-end AI-powered applications from frontend to deployment.',
-        image: 'assets//images/Fullstack.jpeg',
+        image: 'images/Fullstack.jpeg',
         enquiry: 'Full Stack AI Development Course'
     },
     {
         title: 'Graphic Design',
         date: '16 Weeks • Professional',
         desc: 'Graphic Design is the art and practice of creating visual content using typography, images, colors, and layout to communicate ideas, messages, and brand identity effectively across digital and print media.',
-        image: 'assets//images/graphic.jpeg',
+        image: 'images/graphic.jpeg',
         enquiry: 'Graphic Design Course'
     }
 ];
