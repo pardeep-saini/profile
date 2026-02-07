@@ -1,42 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  
-  <title>Pradeep Saini - Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #0f2027;
-      background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
-    img {
-      width: 150px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
-    h1 {
-      font-size: 2.5em;
-    }
-    p {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    a {
-      color: #00e6e6;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aigurukul - Complete Digital Solutions</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <img src="https://avatars.githubusercontent.com/u/12345678?v=4" alt="Profile Photo">
-  <h1>Hi, I'm Pradeep Saini</h1>
-  <p>I'm a Full Stack Developer (React.js + Node.js) from Ghaziabad, passionate about AI & Auto Trading. I create scalable serverless apps using AWS & more.</p>
-  <p>🔗 <a href="https://github.com/pradeepsaini" target="_blank">View My GitHub</a></p>
+    <!-- Navigation -->
+    <nav class="nav" id="mainNav">
+        <div class="logo-container">
+            <img src="assets//images/logoAIGA.png" alt="Aigurukul Logo" class="logo-image">
+           
+        </div>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-menu" id="navMenu">
+            <ul class="nav-links" id="navLinks"></ul>
+            <a href="#contact" class="cta-btn">Whatsup</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="video-background">
+            <video autoplay loop muted playsinline class="custom-video" id="bgVideo" poster="">
+                <source src="assets/video/aigurukulacadmy.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-overlay"></div>
+        <div class="hero-content">
+            <h1>AI's Future</h1>
+            <p>Pioneering advancements in AI with Python, React, and beyond.</p>
+            <div class="hero-buttons">
+                <a href="#latest" class="secondary-btn">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest in AI Section -->
+    <section class="ai-section" id="latest">
+        <h2 class="section-title">Latest in AI</h2>
+        <div class="ai-cards" id="aiCardsContainer"></div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="section white-bg" id="courses">
+        <h2 class="section-title">Our Courses</h2>
+        <p class="section-subtitle">Master AI, Python, React, and cutting-edge technologies with expert-led training programs.</p>
+        <div class="ai-cards" id="coursesContainer"></div>
+    </section>
+
+     <section  style="align-items: flex-end;
+        justify-content: flex-start;
+        padding: 100px 60px 180px;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(135deg, #1e3a8a 0%, #0c1e47 100%)">
+        <div class="video-background">
+            <video autoplay loop muted playsinline class="custom-video" id="bgVideo" poster="">
+                <source src="assets/video/Permotion.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="section white-bg" id="support">
+        <h2 class="section-title">Support</h2>
+        <p class="section-subtitle">We're here to help you succeed every step of the way.</p>
+        <div class="ai-cards" id="supportContainer"></div>
+    </section>
+
+    <!-- Industry Training Section -->
+    <section class="ai-section" id="industry">
+        <h2 class="section-title">Industry Training</h2>
+        <p class="section-subtitle">Real-world projects and industry partnerships to accelerate your career.</p>
+        <div class="services" id="industryContainer"></div>
+    </section>
+
+    
+
+    <!-- Services Section -->
+    <!-- <section class="section" id="services">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">End-to-end digital solutions powered by cutting-edge technology and creative excellence.</p>
+        <div class="services" id="servicesContainer"></div>
+    </section> -->
+
+    <!-- Process Section -->
+    <!-- <section class="section" id="process">
+        <h2 class="section-title">Our Process</h2>
+        <p class="section-subtitle">A streamlined approach that ensures quality results and timely delivery.</p>
+        <div class="process" id="processContainer"></div>
+    </section> -->
+
+    <!-- Stats Section -->
+    <!-- <section class="section">
+        <h2 class="section-title">Why Choose Us</h2>
+        <p class="section-subtitle">Trusted by businesses worldwide for exceptional digital solutions.</p>
+        <div class="stats" id="statsContainer"></div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <!-- <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Choose your preferred way to reach us. We're here to help bring your vision to life.</p>
+        <div class="connect-options" id="connectContainer"></div> -->
+        <div class="social-section">
+            <h3 class="social-title">Follow Us</h3>
+            <div class="social-links" id="socialLinks"></div>
+        </div>
+    </section>
+
+    <!-- Admin Panel -->
+    <section class="section" id="admin-panel" style="display:none;">
+        <h2 class="section-title">Admin Dashboard</h2>
+        <p class="section-subtitle">Visitor Analytics & Tracking</p>
+        
+        <div class="admin-container">
+            <div class="admin-card">
+                <h3 class="admin-stats-title">Total Visitors: <span id="totalVisitors">0</span></h3>
+                <div class="admin-buttons">
+                    <button onclick="clearVisitorData()" class="btn-danger">Clear All Data</button>
+                    <button onclick="exportData()" class="btn-success">Export CSV</button>
+                    <button onclick="toggleForm()" class="btn-primary">Add Manual Entry</button>
+                </div>
+            </div>
+
+            <div id="manualForm" class="admin-card" style="display: none;">
+                <h3 class="admin-form-title">Add Visitor Entry</h3>
+                <form id="visitorForm" onsubmit="saveFormData(event)" class="visitor-form"></form>
+            </div>
+
+            <div class="admin-card table-container">
+                <h3 class="admin-table-title">Visitor Table</h3>
+                <table id="visitorTable" class="visitor-table">
+                    <thead id="tableHead"></thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+            </div>
+            
+            <div id="visitorsList" class="visitors-grid"></div>
+        </div>
+    </section>
+
+    <!-- Admin Login Modal -->
+    <div id="adminLogin" class="modal">
+        <div class="modal-content">
+            <h2 class="modal-title">Super Admin Login</h2>
+            <input type="password" id="adminPassword" placeholder="Enter Admin Password" class="modal-input">
+            <button onclick="adminLogin()" class="btn-primary full-width">Login</button>
+            <button onclick="closeAdminLogin()" class="btn-outline full-width">Cancel</button>
+        </div>
+    </div>
+
+    <!-- Admin Access Button -->
+    <button onclick="showAdminLogin()" class="floating-admin-btn">🔐</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Aigurukul. All rights reserved. Crafting digital excellence, one project at a time.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
